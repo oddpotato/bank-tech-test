@@ -21,3 +21,23 @@ date || credit || debit || balance
 13/01/2012 || 2000.00 || || 3000.00
 10/01/2012 || 1000.00 || || 1000.00
 ```
+
+## User Stories
+
+**User Story 1**
+As a customer, 
+I would like to deposit money into my account
+So I can store it in the bank
+
+**User Story 2**
+As a customer,
+I would like to be able to withdraw funds
+So that I can spend my money
+
+**User Story 3**
+As a customer,
+I would like to be able to review my bank statement
+So that I can keep track of funds
+
+### Methods from User Stories
+
