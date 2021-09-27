@@ -41,3 +41,16 @@ So that I can keep track of funds
 
 ### Methods from User Stories
 
+**Deposit**
+Data: 
+The deposit amount
+The date of deposit
+
+**Withdrawal**
+Data:
+The withdrawal amount
+The date of withdrawal
+
+**Customer Account**
+Data:
+Running balance
