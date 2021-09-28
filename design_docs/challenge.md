@@ -54,3 +54,10 @@ The date of withdrawal
 **Customer Account**
 Data:
 Running balance
+
+### Additional Functionality to be 'Feature Complete'
+
+As these weren't specifically in the spec I have not added them but additional features may include:
+
+**Withdrawal Limit**
+Ensure that the user can't withdrawl more money than their balance/their allowance.

@@ -1,8 +1,6 @@
 class Valid
-
-    def initialize(amount)
-        if !(amount.is_a?(Integer)) then raise "Amount must be a number" end
-        if amount <= 0 then raise "Amount must be greater than 0" end
-    end
-
+  def initialize(amount)
+    raise 'Amount must be a number' if !amount.is_a?(Integer) && !amount.is_a?(Float)
+    raise 'Amount must be greater than 0' if amount <= 0
+  end
 end
