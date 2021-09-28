@@ -44,32 +44,42 @@ As a customer,
 I would like to be able to review my bank statement
 So that I can keep track of funds
 
-### Methods from User Stories
+## Methods from User Stories
 
 **Deposit**
+
 Data: 
 The deposit amount
 The date of deposit
 
 **Withdrawal**
+
 Data:
 The withdrawal amount
 The date of withdrawal
 
 **Customer Account**
+
 Data:
 Running balance
 Transaction history
 
-### Additional Functionality to be 'Feature Complete'
+## Additional Functionality to be 'Feature Complete'
 
 As these weren't specifically in the spec I have not added them but additional features may include:
 
 **Withdrawal Limit**
+
 Ensure that the customer can't withdrawl more money than their balance/their allowance.
+
 **Transaction ID**
+
 Add ID to transactions for easy retrieval. Leading to...
+
 **View specific transaction**
+
 Allow the customer to filter transactions as needed
+
 **View Balance**
+
 Allow the customer to view their current balance
