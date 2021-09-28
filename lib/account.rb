@@ -29,7 +29,7 @@ class Account
   private
 
   def validate(amount)
-    valid = Valid.new(amount)
+    Valid.new(amount)
   end
 
   def format_date
