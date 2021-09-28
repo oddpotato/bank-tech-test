@@ -27,16 +27,19 @@ date || credit || debit || balance
 ## User Stories
 
 **User Story 1**
+
 As a customer, 
 I would like to deposit money into my account
 So I can store it in the bank
 
 **User Story 2**
+
 As a customer,
 I would like to be able to withdraw funds
 So that I can spend my money
 
 **User Story 3**
+
 As a customer,
 I would like to be able to review my bank statement
 So that I can keep track of funds
