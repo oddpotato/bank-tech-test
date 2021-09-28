@@ -37,7 +37,7 @@ describe Account do
     it 'should print off a statement with two lines including the date and amount' do
       expect do
         subject.statement
-      end.to output("date       || credit || debit || balance\n#{Date.today.strftime('%d-%m-%Y')} || 500.00 || || 500.00\n").to_stdout
+      end.to output("date || credit || debit || balance\n#{Date.today.strftime('%d-%m-%Y')} || 500.00 || || 500.00\n").to_stdout
     end
   end
 

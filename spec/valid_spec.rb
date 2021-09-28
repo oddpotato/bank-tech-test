@@ -1,7 +1,7 @@
 require 'valid'
 
 describe Valid do
-  context 'expects valid to raise numerous errors' do
+  context 'expects the Valid class to reject certain input' do
     let(:with_string) { Valid.new('boop') }
     let(:with_zero) { Valid.new(0) }
 
@@ -14,7 +14,7 @@ describe Valid do
     end
   end
 
-  context 'expects valid to accept a valid input' do
+  context 'expects the Valid class to accept valid input' do
     it 'doesn\'t raise an error when an integer is passed to it' do
       expect { Valid.new(23) }.not_to raise_error
     end

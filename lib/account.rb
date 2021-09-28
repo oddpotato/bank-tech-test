@@ -22,7 +22,7 @@ class Account
   end
 
   def statement
-    puts 'date       || credit || debit || balance'
+    puts 'date || credit || debit || balance'
     account_transactions.reverse_each { |line| puts line }
   end
 
