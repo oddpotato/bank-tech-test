@@ -1,35 +1,34 @@
 require 'date'
-require_relative 'valid'
+require_relative 'statement'
 
 class Account
-  attr_reader :account_balance, :account_transactions
+  attr_reader :account_transactions
 
   def initialize
-    @account_balance = 0
     @account_transactions = []
   end
 
   def deposit(amount)
     validate(amount)
-    @account_balance += amount
-    @account_transactions.push(["#{format_date} || #{format_money(amount)} || || #{format_money(account_balance)}"])
+    @account_transactions.push([format_date, format_money(amount).to_i])
   end
 
   def withdraw(amount)
     validate(amount)
-    @account_balance -= amount
-    @account_transactions.push(["#{format_date} || || #{format_money(amount)} || #{format_money(account_balance)}"])
+    @account_transactions.push([format_date, format_money(-amount).to_i])
   end
 
-  def statement
-    puts 'date || credit || debit || balance'
-    account_transactions.reverse_each { |line| puts line }
+  def create_statement
+    statement = Statement.new
+    statement.compile_statement(@account_transactions)
+    statement.print_statement
   end
 
   private
 
   def validate(amount)
-    Valid.new(amount)
+    raise 'Amount must be a number' if !amount.is_a?(Integer) && !amount.is_a?(Float)
+    raise 'Amount must be greater than 0' if amount <= 0
   end
 
   def format_date
@@ -44,3 +43,10 @@ class Account
     @fixed_amount = format('%05.2f', amount)
   end
 end
+
+account = Account.new
+account.deposit(100)
+account.withdraw(50)
+account.deposit(10)
+account.withdraw(3.42)
+account.create_statement
