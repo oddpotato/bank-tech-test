@@ -43,10 +43,3 @@ class Account
     @fixed_amount = format('%05.2f', amount)
   end
 end
-
-account = Account.new
-account.deposit(100)
-account.withdraw(50)
-account.deposit(10)
-account.withdraw(3.42)
-account.create_statement

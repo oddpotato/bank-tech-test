@@ -44,6 +44,11 @@ As a customer,
 I would like to be able to review my bank statement
 So that I can keep track of funds
 
+**Additional Functionality**
+
+Although separate from the user stories, I have amended the methods to ensure payments are saved as integers.
+This allows for greater flexibility if the bank would like to amend transactions or otherwise manipulate the data.
+
 ## Methods from User Stories
 
 **Deposit**
@@ -61,10 +66,22 @@ The date of withdrawal
 **Customer Account**
 
 Data:
-Running balance
 Transaction history
 
-## Additional Functionality to be 'Feature Complete'
+Methods:
+Validation of data
+
+**From Additional Functionality**
+
+**Statement**
+
+***Two methods were necessary here to convert the data, generate a running balance, and then display a completed statement***
+
+Methods:
+Compile statement
+Print statement
+
+## Suggested Additional Functionality to be 'Feature Complete'
 
 As these weren't specifically in the spec I have not added them but additional features may include:
 
