@@ -81,6 +81,10 @@ Methods:
 Compile statement
 Print statement
 
+## Expected Output
+
+![Output](Output.png)
+
 ## Suggested Additional Functionality to be 'Feature Complete'
 
 As these weren't specifically in the spec I have not added them but additional features may include:
